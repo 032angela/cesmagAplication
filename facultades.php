@@ -6,7 +6,8 @@ include 'conexion.php';
   <h1> Listado de facultades </h1>
 
   <div align="right">
-      <a class='btn btn-primary'>Adicionar</a>
+      <a class='btn btn-primary' 
+      href="form_registro_fac.php">Adicionar</a>
   </div>
 
   <table class="table">
@@ -29,7 +30,7 @@ include 'conexion.php';
                   echo "<td>".$row["nombre_fac"]."</td>";
                   echo "<td>
                       <a class='btn btn-success'>Editar</a>
-                      <a class='btn btn-danger'>Eliminar</a>
+                      <a class='btn btn-danger' href='eliminarFac.php?id=".$row["codigo_fac"]."'>Eliminar</a>
                       </td>";
                   echo "</tr>";
               }
